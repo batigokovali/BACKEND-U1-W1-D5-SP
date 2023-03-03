@@ -9,5 +9,16 @@
         "productID": "dd82z1k50lesfltky",
         "createdAt": "2023-03-03T11:07:44.002Z",
         "updatedAt": "2023-03-03T11:54:20.198Z"
+    },
+    {
+        "name": "ICM15210.1",
+        "description": "Filter Coffee Machine, 1.25 Liters, Auto shut off and Anti-Drip system",
+        "brand": "De'Longhi",
+        "price": 60,
+        "category": "small appliances",
+        "productID": "dd82z1ey8leskqhft",
+        "createdAt": "2023-03-03T13:31:19.624Z",
+        "updatedAt": "2023-03-03T13:31:38.210Z",
+        "imageURL": "http://localhost:3001/img/products/dd82z1ey8leskqhft.jpg"
     }
 ]
