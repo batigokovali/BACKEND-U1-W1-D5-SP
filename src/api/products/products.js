@@ -94,21 +94,24 @@ productsRouter.post("/:productID/upload", multer().single("productpicture"), asy
         const allProducts = await getProducts()
         const i = allProducts.findIndex(product => product.productID === req.params.productID)
         if (i !== -1) {
-            console.log("FILE:", req.file)
-            console.log("BODY:", req.body)
-            const originalFileExtension = extname(req.file.originalname)
-            const fileName = req.params.productID + originalFileExtension
-            await saveProductPictures(fileName, req.file.buffer)
+            if (req.file === undefined) {
+                next(createHttpError(404, `You have to provide a file!`))
+            } else {
+                console.log("FILE:", req.file)
+                console.log("BODY:", req.body)
+                const originalFileExtension = extname(req.file.originalname)
+                const fileName = req.params.productID + originalFileExtension
+                await saveProductPictures(fileName, req.file.buffer)
 
-            const oldProduct = allProducts[i]
-            const updatedProduct = { ...oldProduct, ...req.body, imageURL: `http://localhost:3001/img/products/${fileName}`, updatedAt: new Date() }
-            allProducts[i] = updatedProduct
-            await writeProducts(allProducts)
-            res.send({ message: "Product image has been uploaded!" })
+                const oldProduct = allProducts[i]
+                const updatedProduct = { ...oldProduct, ...req.body, imageURL: `http://localhost:3001/img/products/${fileName}`, updatedAt: new Date() }
+                allProducts[i] = updatedProduct
+                await writeProducts(allProducts)
+                res.send({ message: "Product image has been uploaded!" })
+            }
         } else {
             next(createHttpError(404, `Product with ID ${req.params.productID} not found!`))
         }
-
     } catch (error) {
         next(error)
     }
