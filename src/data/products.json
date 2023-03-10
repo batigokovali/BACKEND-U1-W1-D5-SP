@@ -1,1 +1,35 @@
-[{"name":"iPhone SE (2020)","description":"Value Phone","brand":"Apple","imageURL":"http://localhost:3001/img/products/dd82z1k50lesfltky.jpg","price":400,"category":"smartphones","productID":"dd82z1k50lesfltky","createdAt":"2023-03-03T11:07:44.002Z","updatedAt":"2023-03-03T11:54:20.198Z"},{"name":"ICM15210.1","description":"Filter Coffee Machine, 1.25 Liters, Auto shut off and Anti-Drip system","brand":"De'Longhi","price":60,"category":"small appliances","productID":"dd82z1ey8leskqhft","createdAt":"2023-03-03T13:31:19.624Z","updatedAt":"2023-03-03T13:31:38.210Z","imageURL":"http://localhost:3001/img/products/dd82z1ey8leskqhft.jpg"},{"name":"kek","description":":D","brand":"xbox","price":666,"category":"small appliances","productID":"dd82z1954lesqaa46","createdAt":"2023-03-03T16:06:41.333Z","updatedAt":"2023-03-03T16:07:07.209Z","imageURL":"http://localhost:3001/img/products/dd82z1954lesqaa46.jpeg"}]
+[
+    {
+        "name": "iPhone SE (2020)",
+        "description": "Value Phone",
+        "brand": "Apple",
+        "imageURL": "http://localhost:3001/img/products/dd82z1k50lesfltky.jpg",
+        "price": 400,
+        "category": "smartphones",
+        "productID": "dd82z1k50lesfltky",
+        "createdAt": "2023-03-03T11:07:44.002Z",
+        "updatedAt": "2023-03-03T11:54:20.198Z"
+    },
+    {
+        "name": "ICM15210.1",
+        "description": "Filter Coffee Machine, 1.25 Liters, Auto shut off and Anti-Drip system",
+        "brand": "De'Longhi",
+        "price": 60,
+        "category": "small appliances",
+        "productID": "dd82z1ey8leskqhft",
+        "createdAt": "2023-03-03T13:31:19.624Z",
+        "updatedAt": "2023-03-03T13:31:38.210Z",
+        "imageURL": "http://localhost:3001/img/products/dd82z1ey8leskqhft.jpg"
+    },
+    {
+        "name": "kek",
+        "description": ":D",
+        "brand": "xbox",
+        "price": 666,
+        "category": "small appliances",
+        "productID": "dd82z1954lesqaa46",
+        "createdAt": "2023-03-03T16:06:41.333Z",
+        "updatedAt": "2023-03-03T16:07:07.209Z",
+        "imageURL": "http://localhost:3001/img/products/dd82z1954lesqaa46.jpeg"
+    }
+]
